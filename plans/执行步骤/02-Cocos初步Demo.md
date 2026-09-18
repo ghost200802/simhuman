@@ -2,6 +2,13 @@
 
 **状态：** 已实现，待编辑器验收
 
+## 资源生成规则
+
+Demo 的 prefab 规格位于 `assets/specs/sim-human-demo.prefab-spec.json`，由
+`tools/creator-ops/generate-sim-human-demo-prefab.mjs` 生成 `assets/prefabs/SimHumanDemo.prefab`。
+场景脚本组件使用 Cocos Creator 3.8 的压缩脚本 UUID 写入 `__type__`，不使用 `cc.Component + _scriptUuid` 结构。
+后续修改 UI 结构先修改规格 JSON，再执行生成脚本并让 Cocos Asset DB 导入产物。
+
 ## 脚本绑定修复
 
 场景中的 Demo 组件必须使用 `sim-human-demo.ts.meta` 当前 UUID。当前 UUID 为

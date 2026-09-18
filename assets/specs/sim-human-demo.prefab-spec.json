@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "assetType": "prefab",
+  "prefabId": "sim-human-demo",
+  "root": {
+    "name": "SimHumanDemo",
+    "script": {
+      "assetPath": "assets/scripts/cocos-adapter/demo/sim-human-demo.ts",
+      "uuid": "ab057f13-de74-41b8-b59a-0cac568fd2b1",
+      "serializedType": "ab0578T3nRBuLWaDKxWj9Kx"
+    }
+  },
+  "generation": {
+    "target": "assets/prefabs/SimHumanDemo.prefab",
+    "engine": "cocos-creator-3.8"
+  }
+}

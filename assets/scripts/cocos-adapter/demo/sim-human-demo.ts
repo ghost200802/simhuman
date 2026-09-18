@@ -37,14 +37,17 @@ export class SimHumanDemo extends Component {
   private selectedBlockId: number | null = null;
 
   public onLoad(): void {
+    console.log("[SimHumanDemo] onLoad");
     this.buildShell();
     loadSimConfigFromResources((error, config) => {
       if (error || !config) {
+        console.error("[SimHumanDemo] config_load_failed", error);
         this.showError(error ? error.message : "SIM_CONFIG_LOAD_FAILED");
         return;
       }
       this.config = config;
       this.world = initWorld(1, config);
+      console.log("[SimHumanDemo] world_ready", this.world.worldId);
       this.renderWorld();
     });
   }
@@ -58,6 +61,7 @@ export class SimHumanDemo extends Component {
     this.selectionLabel = this.createText(this.node, "点击区块查看区块信息", 250, 205, 18, new Color(190, 210, 232, 255));
     this.errorLabel = this.createText(this.node, "", 0, -285, 18, new Color(255, 120, 120, 255));
     this.gridNode = new Node("BlockGrid");
+    this.gridNode.layer = this.node.layer;
     this.node.addChild(this.gridNode);
     this.gridNode.setPosition(-190, -35, 0);
 
@@ -74,6 +78,7 @@ export class SimHumanDemo extends Component {
     this.gridNode.removeAllChildren();
     for (const block of this.world.blockStates) {
       const blockNode = new Node("Block_" + block.id);
+      blockNode.layer = this.node.layer;
       this.gridNode.addChild(blockNode);
       blockNode.setPosition(block.gridX * 94, -block.gridY * 94, 0);
       const transform = blockNode.addComponent(UITransform);
@@ -126,6 +131,7 @@ export class SimHumanDemo extends Component {
 
   private createText(parent: Node, text: string, x: number, y: number, fontSize: number, color: Color): Label {
     const node = new Node("Label");
+    node.layer = this.node.layer;
     parent.addChild(node);
     node.setPosition(x, y, 0);
     const transform = node.addComponent(UITransform);
@@ -140,6 +146,7 @@ export class SimHumanDemo extends Component {
 
   private createPanel(parent: Node, name: string, x: number, y: number, width: number, height: number, color: Color): Node {
     const node = new Node(name);
+    node.layer = this.node.layer;
     parent.addChild(node);
     node.setPosition(x, y, 0);
     const transform = node.addComponent(UITransform);

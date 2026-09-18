@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "assetType": "scene-settings",
+  "scenePath": "assets/scenes/SimHumanDemo.scene",
+  "canvas": {
+    "position": { "x": 480, "y": 320, "z": 0 },
+    "layer": 524288
+  },
+  "camera": {
+    "parent": "canvas",
+    "position": { "x": 0, "y": 0, "z": 1000 },
+    "near": 1,
+    "far": 2000,
+    "orthoHeight": 320,
+    "priority": 1073741824,
+    "clearFlags": 0,
+    "visibility": 42467328,
+    "layer": 524288
+  },
+  "script": {
+    "componentName": "SimHumanDemo",
+    "serializedType": "ab0578T3nRBuLWaDKxWj9Kx"
+  }
+}
