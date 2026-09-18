@@ -1,0 +1,18 @@
+[
+  { "id": 1, "gridX": 0, "gridY": 0, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 2, "gridX": 1, "gridY": 0, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 3, "gridX": 2, "gridY": 0, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 4, "gridX": 3, "gridY": 0, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 5, "gridX": 0, "gridY": 1, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 6, "gridX": 1, "gridY": 1, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 7, "gridX": 2, "gridY": 1, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 8, "gridX": 3, "gridY": 1, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 9, "gridX": 0, "gridY": 2, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 10, "gridX": 1, "gridY": 2, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 11, "gridX": 2, "gridY": 2, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 12, "gridX": 3, "gridY": 2, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 13, "gridX": 0, "gridY": 3, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 14, "gridX": 1, "gridY": 3, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 15, "gridX": 2, "gridY": 3, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 },
+  { "id": 16, "gridX": 3, "gridY": 3, "terrainId": 1, "climateId": 1, "resourceProfileId": 1 }
+]

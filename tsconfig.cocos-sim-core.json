@@ -1,0 +1,12 @@
+{
+  "extends": "./temp/tsconfig.cocos.json",
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "assets/scripts/sim-core/**/*.ts",
+    "assets/scripts/cocos-adapter/**/*.ts"
+  ]
+}
